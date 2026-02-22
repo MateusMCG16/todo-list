@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const mysql = require("mysql2");
+const cors = require("cors");
 const app = express();
 const port = 3500;
 
@@ -20,6 +21,7 @@ db.connect((err) => {
   console.log("Sucesso ao conectar com o banco!");
 });
 
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
