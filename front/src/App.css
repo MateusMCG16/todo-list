@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffff;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-tarefa {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lista-tarefas {
+  list-style: none;
+}
+
+.item-tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 12px;
+  background-color: #ffff;
+  border: 1px solid #00000081;
+  border-radius: 6px;
+}
+
+.texto-pendente {
+  font-size: 16px;
+  color: #333;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.textp-concluido {
+  font-size: 16px;
+  color: #dddedf;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.botoes-acoes {
+  display: flex;
+  gap: 8px;
+}
